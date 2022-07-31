@@ -21,7 +21,7 @@ jobs:
         uses: alex-page/github-project-automation-plus@v0.8.1
         with:
           project: ${{ matrix.project }}
-          column: 'To do'
+          column: 'Todo'
           repo-token: ${{ secrets.PROJECT_BOARD_AUTOMATION_PAT }}
 
         # When an issue that is open is assigned and has an assigned member
@@ -32,7 +32,7 @@ jobs:
         uses: alex-page/github-project-automation-plus@v0.8.1
         with:
           project: ${{ matrix.project }}
-          column: 'In progress'
+          column: 'In Progress'
           repo-token: ${{ secrets.PROJECT_BOARD_AUTOMATION_PAT }}
         # When an issue is closed with the good first issue tag
         # Create or move the card to "Done"
@@ -61,6 +61,6 @@ jobs:
         uses: alex-page/github-project-automation-plus@v0.8.1
         with:
           project: ${{ matrix.project }}
-          column: 'To do'
+          column: 'Todo'
           repo-token: ${{ secrets.PROJECT_BOARD_AUTOMATION_PAT }}
           action: delete
